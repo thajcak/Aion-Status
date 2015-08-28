@@ -1,0 +1,28 @@
+//
+// Prefix header for all source files of the 'Aion Status' target in the 'Aion Status' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_4_0
+#warning "This project uses features only available in iOS SDK 4.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+    #import <QuartzCore/QuartzCore.h>
+    #import "AppDelegate.h"
+    #import "InnerBand.h"
+    #import "RXMLElement.h"
+    #import "MKNetworkKit.h"
+    #import "TSMiniWebBrowser.h"
+    #import "GADMasterViewController.h"
+    #import "KGModal.h"
+    #import "YRDropdownView.h"
+#endif
+
+#define didPayPremium   @"didPayPremium"
+#define userDefaults    [NSUserDefaults standardUserDefaults]
+#define isiPhone5       [userDefaults boolForKey:@"isiPhone5"]
+#define DID_PAY_PREMIUM [userDefaults boolForKey:didPayPremium]
